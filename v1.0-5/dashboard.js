@@ -17,3 +17,17 @@ document.getElementById('withdraw-value').addEventListener('keyup', function(){
         document.getElementById('withdraw-btn').setAttribute('disabled', true);
     }
 })
+
+
+document.getElementById('deposit-btn').addEventListener('click', function(){
+    const depositValueString = document.getElementById('deposit-value').value;
+    const depositValue = parseFloat(depositValueString)
+    const depositBalanceString = document.getElementById('deposit-balance').innerText;
+    const depositBalance = parseFloat(depositBalanceString)
+
+    const totalDeposit = depositBalance + depositValue;
+    document.getElementById('deposit-balance').innerText = totalDeposit;
+    document.getElementById('deposit-value').value = ""; 
+    
+
+})
