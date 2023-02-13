@@ -1,6 +1,10 @@
 document.getElementById('btn-signup').addEventListener('click', function(){
     const signupEmail = document.getElementById('signup-email').value;
+    
+    
     console.log(signupEmail);
+
+
     const signupPassword = document.getElementById('signup-password').value;
 
     if(signupEmail === "" || signupPassword === ""){
