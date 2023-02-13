@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="w-4/5 mx-auto">
     <header>
@@ -13,11 +14,16 @@
 
     <main class="bg-blue-100  py-24 px-8 border-2 border-2 border-red-200">
         <form action="">
-            <input type="email" name="" placeholder="Enter Your Email" id="input-email" class="block w-4/5 border-2 border-solid border-red-300 py-1 px-2 outline-none rounded-lg">
-            <input type="email" name="" placeholder="Enter Your Email" id="input-email" class="block w-4/5 border-2 border-solid border-red-300 py-1 px-2 outline-none rounded-lg my-8">
-            <button class="bg-red-400 hover:bg-blue-300 px-4 py-2 rounded-lg text-white text-xl font-medium">Sign Up</button>
+            <section id="signup-input-section">
+                <input type="email" name="" placeholder="Enter Your Email" id="signup-email" class="block w-4/5 border-2 border-solid border-red-300 py-1 px-2 outline-none rounded-lg">
+                <input type="password" name="" placeholder="Enter Your Password" id="signup-password" class="block w-4/5 border-2 border-solid border-red-300 py-1 px-2 outline-none rounded-lg my-8">
+            </section>
+            <button id="btn-signup" class="bg-red-400 hover:bg-blue-300 px-4 py-2 rounded-lg text-white text-xl font-medium">Sign Up</button>
         </form>
     </main>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+
+    <script src="signup.js"></script>
 </body>
 </html>
