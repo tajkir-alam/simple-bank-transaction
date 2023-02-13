@@ -45,3 +45,10 @@ document.getElementById('btn-login').addEventListener('click', function(){
         window.location.href = 'dashboard.html';
     }
 })
+
+
+
+
+document.querySelector('form').addEventListener('submit', function(e){
+    e.preventDefault();
+})

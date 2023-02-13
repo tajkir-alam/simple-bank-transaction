@@ -38,3 +38,8 @@ document.getElementById('btn-signup').addEventListener('click', function(){
     }
 })
 
+
+
+document.querySelector('form').addEventListener('submit', function(e){
+    e.preventDefault();
+})
