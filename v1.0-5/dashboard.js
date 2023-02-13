@@ -4,10 +4,10 @@ const withdrawValue = document.getElementById('withdraw-value').value;
 
 document.getElementById('deposit-value').addEventListener('keyup', function(){  
     const depositValue = document.getElementById('deposit-value').value;
-    if(depositValue !== "" && withdrawValue !== ""){
-    depostBtn.removeAttribute('disabled');
+    if(depositValue !== ""){
+        document.getElementById('deposit-btn').removeAttribute('disabled');
     }
     else{
-        depostBtn.setAttribute('disabled', true);
+        document.getElementById('deposit-btn').setAttribute('disabled', true);
     }
 })
