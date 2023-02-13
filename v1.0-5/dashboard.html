@@ -8,12 +8,29 @@
 </head>
 <body class="w-4/5 mx-auto">
     
-    <header class="text-center mt-16">
+    <header class="text-center my-16">
         <h1 class="opacity-75 text-5xl">Welcome to the <span class="opacity-90 font-medium text-blue-900">Dashboard</span></h1>
     </header>
 
     <main>
-        
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-blue-300 border-2 border-violate-900 border-dashed py-8 px-12">
+                <h3 class="text-white text-3xl font-medium tracking-wide">Deposit</h3>
+                <h2 class="text-white text-5xl mt-5">$<span id="deposit-value">00</span></h2>
+            </div>
+            <div class="bg-red-300 border-2 border-violate-900 border-dashed py-8 px-12">
+                <h3 class="text-white text-3xl font-medium tracking-wide">Withdraw</h3>
+                <h2 class="text-white text-5xl mt-5">$<span id="withdraw-value">00</span></h2>
+            </div>
+            <div class="bg-orange-300 border-2 border-violate-900 border-dashed py-8 px-12">
+                <h3 class="text-white text-3xl font-medium tracking-wide">Balance</h3>
+                <h2 class="text-white text-5xl mt-5">$<span id="balance-value">00</span></h2>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            
+        </section>
     </main>
 
 
