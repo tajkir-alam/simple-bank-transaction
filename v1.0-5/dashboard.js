@@ -24,10 +24,16 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositValue = parseFloat(depositValueString)
     const depositBalanceString = document.getElementById('deposit-balance').innerText;
     const depositBalance = parseFloat(depositBalanceString)
+    const totalBalanceString = document.getElementById('total-balance').innerText;
+    const totalBalance = parseFloat(totalBalanceString);
 
     const totalDeposit = depositBalance + depositValue;
     document.getElementById('deposit-balance').innerText = totalDeposit;
     document.getElementById('deposit-value').value = ""; 
+
+
+    const totalBalanceAndDeposit = depositValue + totalBalance;
+    document.getElementById('total-balance').innerText = totalBalanceAndDeposit; 
     
 
 })
