@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
-    <h1>Welcome Dash</h1>
+    <header>
+        <u><h1 class="text-center mt-16 text-4xl">Welcome to the <span class="font-bold text-blue-600">Dashboard</span>. </h1></u>
+    </header>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <main class="mt-14 w-4/5 mx-auto">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-5 text-white">
+            <div class="bg-blue-300 py-8 px-12 border-2 border-dashed border-violate-900">
+                <h3 class="text-2xl font-semibold">Deposit</h3>
+                <h2 class="text-4xl font-bold mt-2">$<span id="deposit-total">00</span></h2>
+            </div>
+            <div class="bg-red-300 py-8 px-12 border-2 border-dashed border-violate-900">
+                <h3 class="text-2xl font-semibold">Withdraw</h3>
+                <h2 class="text-4xl font-bold mt-2">$<span id="withdraw-total">00</span></h2>
+            </div>
+            <div class="bg-orange-300 py-8 px-12 border-2 border-dashed border-violate-900">
+                <h3 class="text-2xl font-semibold">Balance</h3>
+                <h2 class="text-4xl font-bold mt-2">$<span id="balance-total">1245</span></h2>
+            </div>
+        </section>
+
+        <section class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="bg-purple-200 py-16 px-14">
+                <h3 class="text-2xl font-semibold mb-8">Amount You Want To Deposit</h3>
+                <input type="text" name=""placeholder="Enter Your Deposit Amount" id="deposit-value" class="w-4/5 border-2 border-solid border-blue-300 outline-none px-2 py-1">
+                <button id="submit-deposit" class="block mt-5 bg-orange-400 hover:bg-pink-500 px-8 py-3 rounded-xl text-white text-xl font-semibold tracking-widest">Submit</button>
+            </div>
+            <div class="bg-teal-200 py-16 px-14">
+                <h3 class="text-2xl font-semibold mb-8">Amount You Want To Withdraw</h3>
+                <input type="text" name="" placeholder="Enter Your Withdraw Amount" id="withdraw-value" class="w-4/5 border-2 border-solid border-blue-300 outline-none px-2 py-1">
+                <button id="submit-withdraw" class="block mt-5 bg-orange-400 hover:bg-pink-500 px-8 py-3 rounded-xl text-white text-xl font-semibold tracking-widest">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-8 w-4/5 mx-auto grid">
+        <button id="logout-btn" class="bg-red-400 hover:bg-orange-400 text-white text-2xl font-medium py-2 rounded-lg border-2 border-solid border-cyan-300">Log Out</button>
+    </footer>
+
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+    <script src="dashboard.js"></script>
 </body>
 </html>
