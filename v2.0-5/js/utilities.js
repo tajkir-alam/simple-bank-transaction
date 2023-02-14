@@ -55,5 +55,14 @@ function depositToTotal(inputValue, existingAmount){
     const newTotalBalance = totalBalanceNumber + inputValueNumber;
     document.getElementById(existingAmount).innerText = newTotalBalance;
     document.getElementById(inputValue).value = "";
+}
+function withdrawToTotal(inputValue, existingAmount){
+    const inputValueString = document.getElementById(inputValue).value;
+    const inputValueNumber = parseFloat(inputValueString); 
+    const totalBalanceString = document.getElementById(existingAmount).innerText;
+    const totalBalanceNumber = parseFloat(totalBalanceString);
 
+    const newTotalBalance = totalBalanceNumber - inputValueNumber;
+    document.getElementById(existingAmount).innerText = newTotalBalance;
+    document.getElementById(inputValue).value = "";
 }

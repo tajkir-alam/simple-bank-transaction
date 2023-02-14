@@ -10,4 +10,5 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
 })
 document.getElementById('withdraw-btn').addEventListener('click', function(){
     toBalance('withdraw-value', 'withdraw-balance');
+    withdrawToTotal('withdraw-value', 'total-balance');
 })
