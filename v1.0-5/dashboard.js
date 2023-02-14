@@ -32,8 +32,24 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     document.getElementById('deposit-value').value = ""; 
 
 
-    const totalBalanceAndDeposit = depositValue + totalBalance;
+    const totalBalanceAndDeposit = totalBalance + depositValue;
     document.getElementById('total-balance').innerText = totalBalanceAndDeposit; 
-    
+})
+
+
+document.getElementById('withdraw-btn').addEventListener('click', function(){
+    const withdrawValueString = document.getElementById('withdraw-value').value;
+    const withdrawValue = parseFloat(withdrawValueString);
+    const withdrawBalanceString = document.getElementById('withdraw-balance').innerText;
+    const withdrawBalance = parseFloat(withdrawBalanceString);
+    const totalBalanceString = document.getElementById('total-balance').innerText;
+    const totalBalance = parseFloat(totalBalanceString);
+
+    const totalWithdraw = withdrawBalance + withdrawValue;
+    document.getElementById('withdraw-balance').innerText = totalWithdraw;
+    document.getElementById('withdraw-value').value = "";
+
+    const totalBalanceAndWithdraw = totalBalance - withdrawValue; 
+    document.getElementById('total-balance').innerText = totalBalanceAndWithdraw;
 
 })
