@@ -37,3 +37,23 @@ function activeButton(inputValue, btnName){
         return;
     }
 }
+function toBalance(inputValue, existingAmount){
+    const inputValueString = document.getElementById(inputValue).value;
+    const inputValueNumber = parseFloat(inputValueString); 
+    const depositBalanceString = document.getElementById(existingAmount).innerText;
+    const depositBalanceNumber = parseFloat(depositBalanceString);
+
+    const currentDepositBalance = depositBalanceNumber + inputValueNumber;
+    document.getElementById(existingAmount).innerText = currentDepositBalance;
+    document.getElementById(inputValue).value = "";
+}
+function depositToTotal(inputValue, existingAmount){
+    const inputValueString = document.getElementById(inputValue).value;
+    const inputValueNumber = parseFloat(inputValueString); 
+    const totalBalanceString = document.getElementById(existingAmount).innerText;
+    const totalBalanceNumber = parseFloat(totalBalanceString);
+
+    const newTotalBalance = totalBalanceNumber + inputValueNumber;
+    // return newTotalBalance;
+    console.log(newTotalBalance);
+}
