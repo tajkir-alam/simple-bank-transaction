@@ -45,7 +45,6 @@ function toBalance(inputValue, existingAmount){
 
     const currentDepositBalance = depositBalanceNumber + inputValueNumber;
     document.getElementById(existingAmount).innerText = currentDepositBalance;
-    document.getElementById(inputValue).value = "";
 }
 function depositToTotal(inputValue, existingAmount){
     const inputValueString = document.getElementById(inputValue).value;
@@ -54,6 +53,7 @@ function depositToTotal(inputValue, existingAmount){
     const totalBalanceNumber = parseFloat(totalBalanceString);
 
     const newTotalBalance = totalBalanceNumber + inputValueNumber;
-    // return newTotalBalance;
-    console.log(newTotalBalance);
+    document.getElementById(existingAmount).innerText = newTotalBalance;
+    document.getElementById(inputValue).value = "";
+
 }
